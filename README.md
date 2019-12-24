@@ -1,6 +1,8 @@
 # WhatShop-
 A unique blend of online and offline shopping with comparative features.
 
+**Screenshots included in the end**
+
 Introduction :-
 
 When you are sitting at your home on your couch and think of buying something
