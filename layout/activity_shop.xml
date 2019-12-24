@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pacifico"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="WhatShop!"
+        android:background="@drawable/relative_layout_back"
+            android:layout_marginTop="10dp"
+        android:shadowColor="#727171"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:elevation="2dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textFontWeight="700"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+
+     />
+    <ImageView
+        android:id="@+id/shopbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/shop_rel1"
+            android:layout_width="match_parent"
+            android:background="@drawable/relative_layout_back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="300dp"
+
+            android:layout_height="300dp">
+            <TextView
+                android:id="@+id/shopact_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_bold"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:text="Shopname"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+            <LinearLayout
+                android:id="@+id/shop_linear1"
+                android:layout_below="@id/shopact_title"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="city:"
+                    android:textAlignment="center"
+                    android:layout_weight="0.5"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/shopact_city"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/helvetica_med"
+                    android:text="cityname"
+                    android:layout_weight="0.5"
+                    android:textColor="#000"
+
+                    android:textSize="16sp"
+
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/shop_linear2"
+                android:layout_below="@id/shop_linear1"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Owner"
+                    android:textAlignment="center"
+                    android:layout_weight="0.5"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/shopact_owner"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/helvetica_med"
+                    android:text="Ownername"
+                    android:layout_weight="0.5"
+                    android:textColor="#000"
+
+                    android:textSize="16sp"
+
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/shop_linear3"
+                android:layout_below="@id/shop_linear2"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Shop Categry"
+                    android:layout_weight="0.5"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/shopact_category"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/helvetica_med"
+                    android:text="category"
+                    android:layout_weight="0.5"
+                    android:textColor="#000"
+
+                    android:textSize="16sp"
+
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/shopact_chat_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+
+                android:textColor="#fff"
+                android:fontFamily="@font/helvetica_med"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_gradient"/>
+
+            <Button
+                android:id="@+id/shopact_prod_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/shopact_chat_b"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
+                android:background="@drawable/button_gradient"
+
+                android:fontFamily="@font/helvetica_med"
+                android:text="Our Products"
+                android:textColor="#fff" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/shop_rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="10dp"
+            android:minHeight="500dp"
+            android:background="@drawable/relative_layout_back">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/helvetica_bold"
+              android:textSize="18sp"
+              android:padding="10dp"
+              android:id="@+id/shopact_product_heading"
+              android:text="Our Products"
+              android:textAlignment="center"
+              android:textColor="#000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shopact_recycler"
+                android:layout_below="@+id/shopact_product_heading"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

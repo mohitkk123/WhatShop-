@@ -1,0 +1,31 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/searchfrag_search"
+    android:textSize="16sp"
+android:inputType="text"
+    android:imeOptions="actionSearch"
+    android:paddingLeft="10dp"
+    android:background="@drawable/search_edit_back"
+    android:layout_margin="10dp"
+    android:hint="search products..."
+
+
+
+    android:textColor="#000"
+    android:textColorHint="@color/apporange_light"
+
+    android:fontFamily="@font/helvetica_bold"/>
+
+
+
+</LinearLayout>

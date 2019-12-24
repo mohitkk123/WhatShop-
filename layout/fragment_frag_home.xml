@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:clickable="true"
+    tools:context=".fragments.fragHome">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/fraghome_progress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/horRecyclerView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:indeterminateTint="#90f83600"
+            android:progressTint="@color/apporange_light"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/textView5"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/helvetica_bold"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Nearby Shops"
+            android:textColor="#000"
+
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/helvetica_bold"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:layout_below="@+id/horRecyclerView"
+            android:paddingBottom="12dp"
+            android:text="Top Picks"
+            android:textColor="#000"
+
+            android:textSize="18dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horRecyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/textView5"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            /><![CDATA[
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+
+
+        ]]>
+
+        <ProgressBar
+            android:id="@+id/fraghome_progress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@+id/verRecyclerView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="30dp"
+            android:indeterminateTint="#90f83600"
+            android:progressTint="@color/apporange_light"
+            android:visibility="invisible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/verRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

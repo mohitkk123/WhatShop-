@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OnlineP_webviewAct">
+    <TextView
+        android:id="@+id/onlineWebview_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pacifico"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="WhatShop!"
+        android:background="#fff"
+
+        android:shadowColor="#727171"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:elevation="2dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textFontWeight="700"
+        android:textSize="22sp"
+
+      />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/onlineWebview_logo"
+        android:id="@+id/online_web"/>
+
+</RelativeLayout>

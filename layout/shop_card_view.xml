@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+
+    app:cardElevation="5dp"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imag_horrecycler"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shopname"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:layout_below="@+id/imag_horrecycler"
+            android:paddingBottom="8dp"
+            android:id="@+id/shopname_hor_tv"
+            android:fontFamily="@font/helvetica_bold"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

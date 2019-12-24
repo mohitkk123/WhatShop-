@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_back"
+    >
+
+
+    <Button
+        android:id="@+id/SignUp_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/helvetica_med"
+        android:text=" Sign up"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/password_confirm" />
+
+    <Button
+        android:id="@+id/Sign_in_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/helvetica_med"
+        android:text="Sign In"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <EditText
+        android:id="@+id/name_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/edittext_back"
+        android:drawableLeft="@drawable/edditext_user_icon"
+
+        android:drawableTint="#60FF4E00"
+        android:fontFamily="@font/helvetica_med"
+        android:hint="Name"
+        android:textColor="#fff"
+        android:inputType="textEmailAddress"
+
+        android:padding="10dp"
+        android:textColorHint="#80ffffff"
+
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_back"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="5dp"
+        android:drawableTint="#FF4E00"
+        android:fontFamily="@font/helvetica_med"
+        android:hint="Email"
+        android:textColor="#fff"
+
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+
+        android:textColorHint="#80ffffff"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/name_register" />
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_back"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:drawableTint="#FF4E00"
+        android:ems="10"
+        android:textColorHint="#80ffffff"
+        android:hint="Password"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/email_register" />
+
+    <EditText
+        android:id="@+id/password_confirm"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_back"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:drawableTint="#FF4E00"
+        android:ems="10"
+        android:textColorHint="#80ffffff"
+        android:textSize="16sp"
+        android:hint="Confirm Password"
+        android:textColor="#fff"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/password_register" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/helvetica_med"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Hello !"
+        android:textColor="#fe8c00"
+        android:textFontWeight="1500"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/helvetica_med"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp_register" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.085158154" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

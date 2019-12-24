@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_e1"
+        android:fontFamily="@font/helvetica_med"
+        android:hint="enter address"
+        android:textCursorDrawable="@drawable/cur_clack"
+        android:padding="10dp"
+        android:background="@drawable/edittext_back"/>
+
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash On Delivery "
+            android:padding="10dp"
+            android:buttonTint="#000"
+            android:fontFamily="@font/helvetica_bold"
+            android:id="@+id/cart_rad">
+
+
+        </RadioButton>
+
+
+
+
+</LinearLayout>
